@@ -71,6 +71,15 @@ export const experience: ExperienceItem[] = [
 
 export const projects: ProjectItem[] = [
   {
+    title: 'Redgo (Distributed High-Performance Key-Value Store)',
+    link: 'https://github.com/hulkbusterks/redgo',
+    tags: ['Go', 'TCP/QUIC', 'Bitcask'],
+    bullets: [
+      'Developed a Go-based store for LLM caching featuring a custom binary protocol with CRC32 checksums for data integrity.',
+      'Optimized concurrency using Lock Striping (64-shards) and sync.Pool, significantly reducing GC pressure and lock contention.',
+    ],
+  },
+  {
     title: 'Accountability Partner (AI-based Goal Tracking)',
     link: 'https://github.com/hulkbusterks/accountability-partner',
     tags: ['FastAPI', 'LLM tool calling', 'FAISS'],
@@ -119,3 +128,4 @@ export const research: ResearchItem[] = [
     tags: ['NLP', 'Sentiment Analysis', 'Long-form text'],
   },
 ]
+
